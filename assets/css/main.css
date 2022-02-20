@@ -2309,6 +2309,16 @@ input, select, textarea {
 		}
 
 /* Image */
+	.image_center {
+		padding: 0 0em 0em 10em;
+		display: block;
+		margin: 0px auto 0px;
+		width: 80%;
+	}
+
+		.image_center img {
+			width: 80%;
+		}
 
 	.image {
 		border-radius: 4px;
@@ -2345,11 +2355,13 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 70%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 70%;
 			}
 
 		.image.main {
@@ -2827,6 +2839,9 @@ input, select, textarea {
 		}
 
 /* Header */
+	.header.blue {
+		color: blue;
+	}
 
 	#header {
 		padding: 8em 0 0.1em 0 ;

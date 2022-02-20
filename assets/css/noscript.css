@@ -6,10 +6,15 @@
 
 /* Tiles */
 
-	body.is-preload .tiles article {
+	body {
+		color: blueviolet;
+		font-size: large;
+		font-family: 'Courier New', Courier, monospace;	
+	}
+/* 	body.is-preload .tiles article {
 		-moz-transform: none;
 		-webkit-transform: none;
 		-ms-transform: none;
 		transform: none;
 		opacity: 1;
-	}
+	} */
