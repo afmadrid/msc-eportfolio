@@ -57,19 +57,19 @@
 							<br/>
 							<p>According to Cifuentes & Bierman, 2019 three of the top vulnerabilities found in main programming languages are:</p>
 							<ul>
-								<li>Buffer errors. Buffer overflow errors occur when a predefined memory allocated space or data type allocated space (such as integer and long integer) is overloaded. It can cause overwriting of data and potential corruption of memory beyond the defined buffer boundaries.</li>
-								<li>Information leak errors. These errors can be defined as the intentional or unintentional release of information to an untrusted environment. The most common form of information leak error is by disclosing important system information in a way of log files or error messages.</li>
-								<li>Injection errors. This type of errors is performed when an attacker tricks a program into accept malicious input, such as data code or system commands and the program does not implement mechanisms to validate inputs. Usually, malicious inputs are in the form of strings that are entered by the user. Subcategories of injection errors are:</li>
+								<li><u>Buffer errors.</u> Buffer overflow errors occur when a predefined memory allocated space or data type allocated space (such as integer and long integer) is overloaded. It can cause overwriting of data and potential corruption of memory beyond the defined buffer boundaries.</li>
+								<li><u>Information leak errors.</u> These errors can be defined as the intentional or unintentional release of information to an untrusted environment. The most common form of information leak error is by disclosing important system information in a way of log files or error messages.</li>
+								<li><u>Injection errors.</u> This type of errors is performed when an attacker tricks a program into accept malicious input, such as data code or system commands and the program does not implement mechanisms to validate inputs. Usually, malicious inputs are in the form of strings that are entered by the user. Subcategories of injection errors are:</li>
 								<ul style="padding-bottom: 0;">
-									<li style="margin-left:2em">Cross-site scripting (XSS). This is a vulnerability that allows attackers to inject malicious code into a website. Three main types of VSS are considered by CWE-79: reflected XSS, stored XSS and DOM-based XSS.</li>
-									<li style="margin-left:2em">SQL injection. This type of injection allows attackers to execute SQL commands on the database which communicates with the application, usually with the intention of disclosing data and tampering/deleting valuable information.</li>
+									<li style="margin-left:2em"><u>Cross-site scripting (XSS).</u> This is a vulnerability that allows attackers to inject malicious code into a website. Three main types of VSS are considered by CWE-79: reflected XSS, stored XSS and DOM-based XSS.</li>
+									<li style="margin-left:2em"><u>SQL injection.</u> This type of injection allows attackers to execute SQL commands on the database which communicates with the application, usually with the intention of disclosing data and tampering/deleting valuable information.</li>
 								</ul>
 							</ul>
 							<p>In Pillai, 2017 some other vulnerabilities included to this list are:</p>
 							<ul>
-								<li>Improper access control. Applications should consider giving correct access permissions to the users to avoid exposing information or elevation of privileges.</li>
-								<li>Cryptography issues. Level and strength of security should be verified and ascertained via secure protocols or secure mechanisms.</li>
-								<li>Race conditions. This error vulnerability can be produced when two processes or actors attempt to reach a particular resource at the same time and the output depends on the correct order of access.</li>
+								<li><u>Improper access control.</u> Applications should consider giving correct access permissions to the users to avoid exposing information or elevation of privileges.</li>
+								<li><u>Cryptography issues.</u> Level and strength of security should be verified and ascertained via secure protocols or secure mechanisms.</li>
+								<li><u>Race conditions.</u> This error vulnerability can be produced when two processes or actors attempt to reach a particular resource at the same time and the output depends on the correct order of access.</li>
 							</ul>
 							<br/>
 							<h2>Causes of Common Vulnerabilities.</h2>
@@ -84,11 +84,11 @@
 							<p>Abstractions in programming languages can help developers to avoid performing these errors at the possible cost of a time-consuming learning curve and performance overhead in applications. Success of abstraction mechanisms may depend on the easiness of how they can be used.</p>
 							<p>Next abstractions mechanisms are discussed by Cifuentes & Bierman, 2019:</p>
 							<ul>
-								<li>Managed memory. This mechanism is introduced using the concept of garbage collection during runtime of the program. Garbage collection frees the developers of the need to allocate or deallocate memory space manually. Managed memory in some programming domains such as embedded systems is not feasible due to performance overhead.</li>
-								<li>Ownership and borrowing. Ownership is a programming pattern employed in C++ where a resource is only assigned one owner. When a resource is transferred via assignment or passing by value the previous owner of the resource cannot access it. Borrowing allows to reference an available resource in a secure manner.</li>
-								<li>Language INtegrated Query (LINQ) to SQL. Instead of using string commands to execute SQL operations in a database, frameworks such as LINQ which is implemented in .NET allow to use language implemented functions to perform SQL operations. The disadvantage is that complex SQL operations may not be available.</li>
-								<li>Taint tracking. Programming languages such as Ruby implement a taint mode to track external input values and perform taint checks to prevent direct or indirect use of tainted values. Tainted values can include command-line arguments, environment variables, locale information, results of some system class, etc.</li>
-								<li>Faceted values. These types of values may help avoiding leak information errors by allowing developers specifying and enforcing policies of the information that is presented to the final viewer.</li>
+								<li><u>Managed memory.</u> This mechanism is introduced using the concept of garbage collection during runtime of the program. Garbage collection frees the developers of the need to allocate or deallocate memory space manually. Managed memory in some programming domains such as embedded systems is not feasible due to performance overhead.</li>
+								<li><u>Ownership and borrowing.</u> Ownership is a programming pattern employed in C++ where a resource is only assigned one owner. When a resource is transferred via assignment or passing by value the previous owner of the resource cannot access it. Borrowing allows to reference an available resource in a secure manner.</li>
+								<li><u>Language INtegrated Query (LINQ) to SQL.</u> Instead of using string commands to execute SQL operations in a database, frameworks such as LINQ which is implemented in .NET allow to use language implemented functions to perform SQL operations. The disadvantage is that complex SQL operations may not be available.</li>
+								<li><u>Taint tracking.</u> Programming languages such as Ruby implement a taint mode to track external input values and perform taint checks to prevent direct or indirect use of tainted values. Tainted values can include command-line arguments, environment variables, locale information, results of some system class, etc.</li>
+								<li><u>Faceted values.</u> These types of values may help avoiding leak information errors by allowing developers specifying and enforcing policies of the information that is presented to the final viewer.</li>
 							</ul>
 							<br/>
 							<h2>Team Discussion.</h2>
