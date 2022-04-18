@@ -53,19 +53,26 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Secure Software Development</h1>
-							<span class="image main"><img src="images/mod_3_header.png" alt="" /></span>
-							<h2>Unit 3</h2>
+							<h1>Exploring the Cyclomatic Complexity’s Relevance Today</h1>
 							<br/>
-							<h2><a href="mod_3_discussion_1.html">Collaborative Discussion 1</a></h2>
+							<p>Cyclomatic complexity is a metric that can be used to measure the complexity of a program. Complexity is calculated by considering all the possible independent paths that can be traversed from start to finish (Pillai, 2017).</p>
+							<p>Cyclomatic complexity can be a useful metric used by developers to have a good approximation of complexity of code being developed. Managers can find this metric useful because it can help them to predict the necessary resources it will take to maintain functionalities of the system (Ferrer et al., 2012).</p>
+							<p>One weakness of cyclomatic complexity is that it does includes complexity added by nested conditionals or other pieces of code such as classes (Ferrer et al., 2012).</p>
+							<p>McCabe cyclomatic complexity is measured by using the control flow graph of a code. Nodes represent the blocks inside the program and edges represent flow from one block of code to another (Ferrer et al., 2012).</p>
+							<p>According to Pillai, 2017, McCabe cyclomatic complexity can be expressed as:</p>
+							<span class="image_center"><img src="images/mccabe_expression.png" alt="" /></span>
+							<p><center>Figure 1. McCabe Cyclomatic Complexity.</center></p>
+							<p>Next example shows the calculation of cyclomatic complexity with a source code and control flow graph example.</p>
+							<span class="image_center"><img src="images/cyclomatic_comp_example.png" alt="" /></span>
+							<p><center>Figure 2. Example of cyclomatic complexity calculation.</center></p>
+							<p>Studies have found strong positive correlation between the cyclomatic complexity and defects in code: the higher the complexity, the larger the number of faults. In addition, it has been found a connection between complexity and difficulty to understand software (Ferrer et al., 2012).</p>
+							<p>In conclusion, cyclomatic complexity should continue to be used as a metric for developers, testers and managers to understand in which parts of the program more resources and efforts may be foucused. Though cyclomatic complexity does not directly enforces security of a program, understanding high cyclomatic complexity values in specific parts of the code may improve security by placing more testing efforts in exercising paths that may contain vulnerabilities in more complex parts of the program. This understanding could also help by reducing code coupling and increasing its cohesion, so the code is easier to reutilize, maintain and implement additional security features.</p>
 							<br/>
-							<h2><a href="mod_3_seminar_1.html">Scrum Agile and Security Process</a></h2>
-							<br/>
-							<h2><a href="mod_3_unit_3_team_discussion.html">What is a Secure Programming Language?</a></h2>
-							<br/>
-							<h2><a href="mod_3_unit_3_team_discussion.html">Exploring the Cyclomatic Complexity’s Relevance Today</a></h2>
+							<h2>References:</h2>
+							<p>Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.</p>
+							<p>Ferrer, J., Francisco, C. and Enrique, A. (2012) Estimating Software Testing Complexity. Information and Software Technology.</p>
 						</div>
-					</div>
+					</div>				
 
 				<!-- Footer -->
 					<footer id="footer">
